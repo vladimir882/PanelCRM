@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.sideBar {
+  padding: 0 20px 20px 20px;
+  background-color: #ffffff;
+  width: 100%;
+  min-width: 320px;
+  max-width: 320px;
+  overflow-x: hidden;
+  .sideBarMenu {
+
+    .sideBarHeader {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 5px;
+      padding: 22px;
+      position: relative;
+      .sideBarHeaderTitle {
+        color: #000;
+        font-family: "Poppins", sans-serif;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.26px;
+      }
+      .navbarHeaderVersion {
+        position: absolute;
+        left: 214px;
+        top: 40px;
+        color: #838383;
+        font-family: "Poppins", sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.1px;
+      }
+    }
+    .sideBarItemWrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+    }
+    .sideBarItem {
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      height: 46px;
+      padding: 0 15px 0 15px;
+      gap: 14px;
+      .sideBarItemText {
+        color: #9197B3;
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.14px;
+      }
+    }
+  }
+}
+
+.sideBarBurgerText {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.26px;
+  padding-bottom: 5px;
+}
+
+
+
+.sideBarItemActive {
+  justify-content: space-between;
+  border-radius: 8px;
+  background: #5932EA;
+  display: flex;
+  align-items: center;
+  height: 46px;
+  padding: 0 15px 0 15px;
+  .sideBarItemTextActive {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.14px;
+  }
+}
+
+.sideBarUser {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 50px;
+  .sideBarUserPhoto {
+    width: 42px;
+    height: 42px;
+    border-radius: 42px;
+  }
+}
+
+.sideBarUserName {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.14px;
+}
+
+.sideBarUserJob {
+  color: #757575;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.12px;
+}
+
+
+.burgerButton {
+  color: #757575;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .sideBar {
+    min-width: 768px;
+    max-width: 768px;
+  }
+
+  .open {
+    display: flex;
+    flex-direction: column;
+    max-width: 768px;
+  }
+
+}
+
+
+@media screen and (min-width: 1199px) {
+
+  .burgerButton {
+    display: none;
+  }
+
+  .sideBar {
+    background-color: #ffffff;
+    min-width: 306px;
+    max-width: 306px;
+    height: 1198px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .sideBarMenu {
+      display: flex;
+      flex-direction: column;
+
+    }
+  }
+
+  .sideBarUser {
+    padding-top: 597px;
+  }
+
+  .open .sideBarMenu {
+    display: flex;
+  }
+}
+
